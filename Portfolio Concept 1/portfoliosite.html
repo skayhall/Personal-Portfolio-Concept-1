@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Shanakay Hall | Portfolio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/portfoliosite.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,500|Jura:700|PT+Sans:400,700&display=swap');
+        </style>
+    </head>
+
+    <body>
+
+    <!--HEADER SECTION - logo, main links, and main header-->
+
+        <header>
+            <div class="headercontainer">    
+
+                <div id="nav-flexContainer" class="wrapper">
+                    <div id="mainlogobox">
+                        <a href="#"><img src="assets/logo-sh.png" id="logo" alt="Shanakay Hall logo"></a>
+                    </div>
+                    <div><button id="navbutton">main menu</button></div>
+                    <nav id="mainnav">
+
+                        <!--HAMBURGER MENU-->
+                        <label for="hamtoggle" id="hamlabel">&#9776;</label>
+                        <input type="checkbox" id="hamtoggle"/>
+
+                        <ul id="main-menulinks">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Work</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>    
+                </div>
+
+            </div>
+
+            <div id="main-header" class="wrapper">
+                <div>
+                    <h1 id="jobtitle">web developer <span class="plussign">+</span> designer</h1>
+                    <p id="jobtitle-likes">i love creating things, exploring new places and good music</p>
+                    <img src="assets/vec_character_kaykay_whitebg.png" id="vectorcharacter" alt="vector illustration of Shanakay Hall">
+                    <img src="assets/flower.png" id="vectorflower" alt="Vector flower drawing">
+                </div>
+
+            </div>
+
+            <div id="top-yellowbackground">
+                <div id="blankyellowsection-par" class="wrapper">
+                <p id="loremhidden">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam sit consequuntur 
+                    debitis dolores, libero commodi aliquam tempora? Consequatur sint veniam placeat, 
+                    ab est, ex veritatis amet dolore consectetur animi nisi cumque nemo possimus 
+                    accusantium fugiat culpa voluptates distinctio vitae ad? Modi quis unde a eum 
+                    cupiditate aperiam fuga, voluptate exercitationem.lorem10ab est, ex veritatis amet 
+                    dolore consectetur animi nisi cumque nemo possimus accusantium fugiat culpa 
+                    voluptates distinctio vitae ad? Modi quis unde a eum cupiditate aperiam fuga, 
+                    voluptate exercitationem.lorem10</p>
+                </div>
+            </div>   
+
+        </header>
+
+    
+    <!--MAIN SECTION START HERE - about me and skills-->
+
+        <main>
+
+            <div id="aboutmecontainer">
+                <div id="section-aboutme" class="wrapper">
+
+                    <h2 id="aboutmehead">{ a little about me }</h2>
+                    <p id="aboutmedesc">Hey, I'm Shanakay. Nice to virutally meet you. I'm trained as a 
+                        Full-Stack Web Developer but mostly focus on Front-End. I have a 
+                        degree and background in Communications and have worked in the public
+                        and private sectors co-ordinating and leading a variety of digital 
+                        projects. I'm humbly confident, naturally curious, and a problem solver 
+                        who's always looking for opportunities where I can put my creative and 
+                        technical skills to good use. <a href="#">Learn more about me</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div id="skillscontainer">
+                <div id="section-skills" class="wrapper">
+
+                    <h2 id="sectionhead-skills" class="sectionhead">{ she's got skills }</h2>
+                    <div id="skillscontainer-icons">
+                        <img src="assets/icons/icon_photoshop.png" class="icon" alt="Adobe Photoshop icon">
+                        <img src="assets/icons/icon_illustrator.png" class="icon" alt="Adobe Illustrator icon">
+                        <img src="assets/icons/icon_html.png" class="icon" alt="HTML icon">
+                        <img src="assets/icons/icon_css.png" class="icon" alt="CSS icon">
+                        <img src="assets/icons/icon_javascript.png" class="icon"  alt="Javascript icon">
+                        <img src="assets/icons/icon_mysql.png" class="icon" alt="mySQL icon">
+                        <img src="assets/icons/icon_csharp.png" class="icon" alt="C Sharp icon">
+                    </div>
+        
+                </div>
+            </div>
+
+        </main>
+
+    
+    <!--RECENT PROJECTS AND CONTACT FORM-->
+
+
+        <div class="section-recentprojects wrapper">
+
+            <h2 class="sectionhead">{ recent projects }</h2>
+
+            <div id="flex-recentprojects">
+                <div>
+                    <img src="assets/screenshot_webdev_ecommsite.jpg" class="portfolio-ex" alt="Portfolio project 1">
+                </div>
+                <div>
+                    <img src="assets/screenshot_webdev_ontario_mnrf_cmid.jpg" class="portfolio-ex" alt="Portfolio project 2">
+                </div>
+                <div>
+                    <img src="assets/screenshot_webdev_manufacturing.jpg" class="portfolio-ex portfolio-ex-2" alt="Portfolio project 3">
+                </div>
+                <div>
+                    <img src="assets/screenshot_webdev_travelsite.jpg" class="portfolio-ex portfolio-ex-2" alt="Portfolio project 4">
+                </div>
+               <div>
+                    <button>See more of my work</button>
+                </div>
+                
+            </div> 
+
+        </div>
+
+
+        <div id="section-contactform" class="wrapper">
+            <div id="flex-contactcon">
+                <h2 class="sectionhead">{ get in touch }</h2>
+                <p id="contactpar">Have a project idea or want to hire me? Get in touch!</p>
+                
+                    <form action="#" method="POST" class="getintouchForm" autocomplete="off" name="getintouchForm">
+
+                        <fieldset>
+                            <legend id="contactformlegend">Contact Me Form</legend>
+                            <label for="yourname">Name</label>
+                            <input type="text" id="yourname" name="yourname" placeholder="Name" required="required">
+
+                            <label for="emailaddress">Email</label>
+                            <input type="email" id="emailaddress" name="email" placeholder="Email" required="required">
+
+                            <label for="yourmessage">Your Message</label>
+                            <textarea rows="5" cols="40" id="yourmessage" name="yourmessage" required="required">Your Message</textarea>
+
+                        <input class="submit" type="submit" value="Submit" >
+                        </fieldset>
+                    </form>
+            </div>
+            <img src="assets/flower.png" id="vectorflower-bottom" alt="Vector flower drawing">
+        </div>
+
+    </body>
+
+    <!-- FOOTER STYLES --> 
+
+    <footer>
+        <div id="footer-wrapper">
+            <div id="flex-first-footer">
+                <div class="footer-col1">
+                    <h3 class="footerheader">stay connected</h3>
+                    <nav class="footer-nav1">
+                            <ul class="footer-menu1">
+                                <li><a href="#">Github</a></li>
+                                <li><a href="#">Code Pen</a></li>
+                                <li><a href="#">Behance</a></li>
+                                <li><a href="#">Instagram</a></li>
+                            </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-col2">
+                    <h3 class="footerheader">location</h3>
+                    <div>
+                        <p>Based out of the Greater Toronto Area.</p> 
+                        <p>Also able to work remotely.</p>
+                    </div>
+                </div>
+
+                <div class="footer-col3">
+                    <h3 class="footerheader">navigation</h3>
+                    <nav class="footer-nav2">
+                            <ul class="footer-menu2">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Work</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact Me</a></li>
+                            </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div id="last-footer">
+            <div class="wrapper">
+                <p>Website developed and designed by Shanakay Hall | &copy; 2020</p>
+            </div>
+        </div> 
+    </footer>
+
+</html>
